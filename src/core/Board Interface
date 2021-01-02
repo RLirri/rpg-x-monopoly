@@ -1,0 +1,377 @@
+import java.awt.BorderLayout;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+ 
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import javax.swing.JFrame;
+
+import javax.swing.JFrame;
+public class Grid {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("GameBoard");
+        frame.setLocation(10, 10);
+        frame.setSize(600, 400);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(new BorderLayout());
+        JPanel centerPane = new JPanel();
+        
+        frame.add(centerPane, BorderLayout.CENTER);
+        
+        centerPane.setLayout(new GridBagLayout());
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.fill = GridBagConstraints.BOTH;
+        
+        
+        
+        /*Message Box*/
+        
+          JButton btn00 = new JButton("Message");
+        gbc.gridx = 1;
+        gbc.gridy = 1;
+        gbc.gridwidth =7 ;
+        gbc.gridheight = 3;
+        gbc.weightx = 0.7;
+        gbc.weighty = 0.35;
+        centerPane.add(btn00, gbc);
+        
+        /*Middle*/
+         JButton btn03 = new JButton(" ");
+        gbc.gridx = 1;
+        gbc.gridy = 4;
+        gbc.gridwidth =7 ;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.7;
+        gbc.weighty = 0.35;
+        centerPane.add(btn03, gbc);
+        
+        /*COMMAND*/
+         JButton btn01 = new JButton("COMMAND");
+        gbc.gridx = 1;
+        gbc.gridy = 5;
+        gbc.gridwidth =7 ;
+        gbc.gridheight = 3;
+        gbc.weightx = 0.7;
+        gbc.weighty = 0.35;
+        centerPane.add(btn01, gbc);
+        
+        
+        /*Front Line*/
+        
+        JButton btn1 = new JButton("CHEST");
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.15;
+        gbc.weighty = 0.15;
+        centerPane.add(btn1, gbc);
+        
+        JButton btn2 = new JButton("SIN-M");
+        gbc.gridx = 1;
+        gbc.gridy = 0;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn2, gbc);
+        
+        
+        JButton btn3 = new JButton("DUO-M");
+        gbc.gridx = 2;
+        gbc.gridy = 0;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn3, gbc);
+        
+        
+        JButton btn4 = new JButton("TRI-M");
+        gbc.gridx = 3;
+        gbc.gridy = 0;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn4, gbc);
+        
+        
+        JButton btn5 = new JButton(" ");
+        gbc.gridx = 4;
+        gbc.gridy = 0;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn5, gbc);
+        
+        JButton btn6 = new JButton("SIN-M ");
+        gbc.gridx = 5;
+        gbc.gridy = 0;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn6, gbc);
+        
+        JButton btn7 = new JButton("DUO-M ");
+        gbc.gridx = 6;
+        gbc.gridy = 0;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn7, gbc);
+        
+        JButton btn8 = new JButton("SIN-M ");
+        gbc.gridx = 7;
+        gbc.gridy = 0;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn8, gbc);
+        
+        
+        JButton btn9 = new JButton("SHOP ");
+        gbc.gridx = 8;
+        gbc.gridy = 0;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.15;
+        gbc.weighty = 0.15;
+        centerPane.add(btn9, gbc);
+        
+        /*Left*/
+         JButton btn10 = new JButton("TRI-M ");
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn10, gbc);
+        
+         JButton btn11 = new JButton("SIN-M ");
+        gbc.gridx = 0;
+        gbc.gridy = 2;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn11, gbc);
+        
+         JButton btn12 = new JButton("SIN-M");
+        gbc.gridx = 0;
+        gbc.gridy = 3;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn12, gbc);
+        
+         JButton btn13 = new JButton(" ");
+        gbc.gridx = 0;
+        gbc.gridy = 4;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn13, gbc);
+        
+         JButton btn14 = new JButton("DUO-M");
+        gbc.gridx = 0;
+        gbc.gridy = 5;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn14, gbc);
+        
+         JButton btn15 = new JButton("SIN-M ");
+        gbc.gridx = 0;
+        gbc.gridy = 6;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn15, gbc);
+        
+        
+         JButton btn16 = new JButton("DUO-M ");
+        gbc.gridx = 0;
+        gbc.gridy = 7;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn16, gbc);
+        
+         JButton btn17 = new JButton("SHOP");
+        gbc.gridx = 0;
+        gbc.gridy = 8;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.15;
+        gbc.weighty = 0.15;
+        centerPane.add(btn17, gbc);
+        
+        /*Botton*/
+                 JButton btn18 = new JButton("SIN-M");
+        gbc.gridx = 1;
+        gbc.gridy = 8;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn18, gbc);
+        
+                 JButton btn19 = new JButton("SIN-M");
+        gbc.gridx = 2;
+        gbc.gridy = 8;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn19, gbc);
+        
+                 JButton btn20 = new JButton("DUO-M");
+        gbc.gridx = 3;
+        gbc.gridy = 8;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn20, gbc);
+        
+                 JButton btn21 = new JButton(" ");
+        gbc.gridx = 4;
+        gbc.gridy = 8;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn21, gbc);
+        
+                 JButton btn22 = new JButton("SIN-M");
+        gbc.gridx = 5;
+        gbc.gridy = 8;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn22, gbc);
+        
+                 JButton btn23 = new JButton("TRI-M");
+        gbc.gridx = 6;
+        gbc.gridy = 8;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn23, gbc);
+        
+                 JButton btn24 = new JButton("DUO-M");
+        gbc.gridx = 7;
+        gbc.gridy = 8;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn24, gbc);
+        
+                 JButton btn25 = new JButton("<-START");
+        gbc.gridx = 8;
+        gbc.gridy = 8;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.15;
+        gbc.weighty = 0.15;
+        centerPane.add(btn25, gbc);
+        
+   
+        
+        /*Right*/
+        
+        JButton btn26 = new JButton("SIN-M");
+        gbc.gridx = 8;
+        gbc.gridy = 1;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn26, gbc);
+        
+        
+        JButton btn27 = new JButton("DUO-M");
+        gbc.gridx = 8;
+        gbc.gridy = 2;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn27, gbc);
+        
+        JButton btn28 = new JButton("DUO-M");
+        gbc.gridx = 8;
+        gbc.gridy = 3;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn28, gbc);
+        
+        
+        JButton btn29 = new JButton(" ");
+        gbc.gridx = 8;
+        gbc.gridy = 4;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn29, gbc);
+        
+        
+        JButton btn30 = new JButton("TRI-M");
+        gbc.gridx = 8;
+        gbc.gridy = 5;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn30, gbc);
+        
+        
+        JButton btn31 = new JButton("SIN-M");
+        gbc.gridx = 8;
+        gbc.gridy = 6;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.1;
+        gbc.weighty = 0.1;
+        centerPane.add(btn31, gbc);
+        
+        JButton btn32 = new JButton("SIN-M");
+        gbc.gridx = 8;
+        gbc.gridy = 7;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.weightx = 0.15;
+        gbc.weighty = 0.15;
+        centerPane.add(btn32, gbc);
+        
+        
+        
+        
+        
+        
+         
+        
+        frame.setVisible(true);
+    }
+
+    
+}
